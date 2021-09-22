@@ -1,0 +1,363 @@
+:root {
+    --backColor: #90a532;
+    --black: #0c0c0c;
+    --grey: #474747;
+    --newwhite: #e0ecb5;
+    --light: hsla(0, 0%, 100%, 1);
+}
+
+
+/* Top section */
+
+.mast-head {
+    background-color: var(--backColor);
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    z-index: 1;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+
+/* nav bar */
+
+.mast-head nav {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    height: 40px;
+    font-size: 17px;
+    font-style: italic;
+    line-height: 25px;
+    text-decoration: none;
+    text-transform: capitalize;
+}
+
+
+/* nav items */
+
+.mast-head .nav-link {
+    padding: 10px 20px;
+    color: var(--black);
+    text-decoration: none;
+    font-family: serif;
+    border-radius: 12px;
+    font-weight: bold;
+}
+
+nav ul {
+    display: flex;
+}
+
+.mast-head nav ul li a:hover {
+    background-color: var(--grey);
+    box-shadow: 5px 5px rgba(0, 0, 30px, 0.02);
+    transition: all ease 0.2s;
+    color: #fdfdfd;
+}
+
+
+/* top section site logo */
+
+.site-logo {
+    color: var(--black);
+    width: 32px;
+    height: 32px;
+    display: block;
+    overflow: visible;
+    border: 4px solid var(--black);
+    position: relative;
+    transform: rotate(0deg);
+    transition: transform .4s ease-in-out;
+    flex-shrink: 0;
+}
+
+.site-logo .logo-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) rotate(0deg);
+    transition: transform .4s ease-in-out;
+    font-weight: 700;
+    font-size: 10px;
+}
+
+.site-logo:hover {
+    opacity: 1;
+    transform: rotate(-90deg);
+    transition: transform .4s ease-in-out
+}
+
+.site-logo:hover .logo-text {
+    transform: translate(-50%, -50%) rotate(90deg);
+    transform-origin: center
+}
+
+
+/* section 2 with main heading and  profile image */
+
+.section-2 {
+    display: block;
+    left: 0px;
+    top: 0;
+    width: 100%;
+    z-index: 1;
+    padding-top: 100px;
+    padding-bottom: 40px;
+    background-color: var(--black);
+}
+
+.container-2 {
+    max-width: 1200px;
+    padding-left: 150px;
+}
+
+.heading {
+    max-width: 1500px;
+    max-width: 900px;
+    margin-top: 25px;
+    margin-bottom: 25px;
+    color: var(--newwhite);
+    font-size: 20px;
+    font-family: sans-serif;
+}
+
+.text-block {
+    font-family: sans-serif;
+    font-size: 12px;
+    font-weight: 600;
+    text-transform: uppercase;
+    color: var(--newwhite);
+}
+
+.container-2 div img {
+    height: 589px;
+    width: 502px;
+}
+
+
+/* Selected Projects */
+
+.section-3 {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    background-color: var(--backColor);
+    padding-top: 100px;
+    align-items: center;
+}
+
+
+/* project heading */
+
+h2 {
+    text-align: center;
+    margin-bottom: 10px;
+    font-size: 28px;
+    color: var(--black);
+    padding-bottom: 20px;
+}
+
+
+/* container for projects */
+
+.collection-item {
+    flex-direction: row;
+    background-color: var(--black);
+    padding: 20px 50px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+
+/* project card */
+
+.collection {
+    display: flex;
+    flex-direction: column;
+    transition: flex-basis 500ms linear;
+    border-style: solid;
+    border-width: 1px;
+    border-radius: 10px;
+    border-color: var(--light);
+    padding: 10px;
+    margin: 20px;
+    color: var(--backColor);
+    cursor: pointer;
+    width: 450px;
+}
+
+
+/* see project */
+
+.overlay-button {
+    padding: 12px;
+    margin: 10px;
+    color: var(--backColor);
+    text-decoration: none;
+    font-family: serif;
+    border-radius: 12px;
+    font-weight: bold;
+    width: 120px;
+    border-style: solid;
+    border-width: 1px;
+    border-color: var(--light);
+}
+
+.collection:hover,
+.collection:hover .overlay-button {
+    box-shadow: inset 0px 0px 8px var(--newwhite), 0 0 15px var(--backColor);
+    transform: scale(1.1);
+}
+
+h3 {
+    padding: 20px;
+    text-align: center;
+    background-color: var(--grey);
+}
+
+.collection img {
+    width: 100%;
+    height: 300px;
+}
+
+
+/* section-4 contact form */
+
+.section-4 {
+    display: flex;
+    justify-content: center;
+    text-decoration: none;
+    align-items: center;
+    background-color: var(--backColor);
+    padding-top: 50px;
+    padding-bottom: 100px;
+    font-size: 14px;
+}
+
+h4 {
+    font-size: 28px;
+    margin-bottom: 30px;
+    color: var(--black);
+}
+
+
+/* form header + form */
+
+.container-4 {
+    color: var(--light);
+}
+
+
+/* form selectors */
+
+.container-5 {
+    border-radius: 5px;
+    background-color: var(--black);
+    padding: 20px;
+    width: 700px;
+}
+
+input[type=text],
+select,
+textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid var(--light);
+    border-radius: 4px;
+    resize: vertical;
+    border-radius: .25rem;
+}
+
+.form-control:focus {
+    color: #495057;
+    background-color: var(--light);
+    border-color: var(--light);
+    outline: 0;
+    box-shadow: 0 0 0 .2rem var(--backColor);
+}
+
+label {
+    padding: 12px 12px 12px 0;
+    display: inline-block;
+}
+
+input[type=submit] {
+    background-color: #595959;
+    color: var(--light);
+    margin-top: 10px;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    float: right;
+}
+
+input[type=submit]:hover {
+    background-color: var(--backColor);
+    color: var(--black);
+}
+
+.field-1 {
+    float: left;
+    width: 25%;
+    margin-top: 6px;
+}
+
+.field-2 {
+    float: left;
+    width: 75%;
+    margin-top: 6px;
+}
+
+
+/* Clear floats after the columns */
+
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+
+/*  footer  */
+
+.footer {
+    padding: 30px;
+    clear: both;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    text-align: center;
+    color: var(--light);
+    background: var(--black);
+}
+
+.footer p {
+    font-size: 14px;
+}
+
+
+/* Responsive layout for form - when the screen is less than 600px wide, make the two columns stack on top of each other instead of next to each other */
+
+@media screen and (max-width: 768px) {
+    .field-1,
+    .field-2 input[type=submit] {
+        width: 100%;
+        margin-top: 0;
+    }
+}
+
+
+/* responsive layout for background image  */
+
+@media screen and (max-width: 768px) {
+    .container-2 div img {
+        height: 383px;
+        width: 326px;
+    }
+}
