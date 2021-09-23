@@ -102,7 +102,9 @@ nav ul {
 /* section 2 with main heading and  profile image */
 
 .section-2 {
-    display: block;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
     left: 0px;
     top: 0;
     width: 100%;
@@ -110,11 +112,6 @@ nav ul {
     padding-top: 100px;
     padding-bottom: 40px;
     background-color: var(--black);
-}
-
-.container-2 {
-    max-width: 1200px;
-    padding-left: 150px;
 }
 
 .heading {
@@ -136,6 +133,8 @@ nav ul {
 }
 
 .container-2 div img {
+    display: flex;
+    justify-content: center;
     height: 589px;
     width: 502px;
 }
@@ -204,7 +203,7 @@ h2 {
     font-family: serif;
     border-radius: 12px;
     font-weight: bold;
-    width: 120px;
+    width: 150px;
     border-style: solid;
     border-width: 1px;
     border-color: var(--light);
@@ -326,19 +325,26 @@ input[type=submit]:hover {
 }
 
 
-/*  footer  */
+/* footer */
 
 .footer {
-    padding: 30px;
-    clear: both;
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    text-align: center;
-    color: var(--light);
+    left: 0;
+    bottom: 0;
+    width: 100%;
     background: var(--black);
+    color: var(--light);
+    text-align: center;
+    padding-top: 25px;
+    padding-bottom: 25px;
+    padding-left: 10px;
+    padding-right: 10px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
 
-.footer p {
-    font-size: 14px;
+i:hover {
+    color: var(--newwhite);
+    transition: 0.4s;
+    cursor: pointer;
 }
 
 
